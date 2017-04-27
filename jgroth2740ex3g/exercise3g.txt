@@ -1,0 +1,20 @@
+101
+Jon Groth
+10.0
+0.0
+102
+Melissa Groth
+20.0
+10.0
+103
+Brittany Sera
+30.0
+20.0
+104
+Christopher Losinski
+40.0
+30.0
+105
+Andrew Losinski
+50.0
+40.0
