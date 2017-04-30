@@ -107,7 +107,7 @@ public class PayrollObjMapper {
 			while (this.inputFile.hasNext()) {
 				Payroll p = this.getNextPayroll();
 				if (p != null)
-					payrollCollection.addElement(this.getNextPayroll());
+					payrollCollection.addElement(p);
 			}
 		}
 		
@@ -121,11 +121,13 @@ public class PayrollObjMapper {
 		if (this.openOutputFile()) {
 			payrollCollection.getSize();
 			
-			for (i = 0; i < payrollCollection.getSize() - 1; i++)
+			for (i = 0; i < payrollCollection.getSize(); i++)
 			{
 				Payroll p = (Payroll) payrollCollection.get(i);
 				this.writePayroll(p);
 			}
 		}
+		this.closeOutputFile();
 	}
+	
 }
